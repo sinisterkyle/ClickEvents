@@ -1,7 +1,8 @@
-const button = document.querySelector("button");
+const buttons = document.querySelectorAll("button");
 const body = document.querySelector("body");
-button.addEventListener('click', function() {
-    const pTag = document.createElement('p');
-    pTag.textContent = "Hey Guys";
-    body.appendChild(pTag);
-})
+
+for(let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function(event) {
+        console.log(event.target.value);
+    })
+}
