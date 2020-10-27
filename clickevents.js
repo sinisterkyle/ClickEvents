@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll("button");
+const button = document.querySelector("button");
 const body = document.querySelector("body");
 
 document.getElementById('1');
