@@ -1,18 +1,20 @@
 const button = document.querySelector("button");
 const body = document.querySelector("body");
+button.addEventListener("click", event => {
 
 document.getElementById('1');
-    addEventListener("click", function() {
+document.getElementById('2');
+document.getElementById('3');
+if (event.button == 0) {
     document.getElementById("demo1").innerHTML = "Foo";
-    });
+    };
 
 document.getElementById('2');
-    addEventListener("click", function() {
+if (event.button == 1) {
     document.getElementById("demo2").innerHTML = "Bar";
-    });
+    };
 
-document.getElementById('3');
-    addEventListener("click", function() {
+if (event.button == 2) {
     document.getElementById("demo3").innerHTML = "FooBar";
-
+    };
 });
